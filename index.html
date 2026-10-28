@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>張瑈君 | 數位商管跨領域人才</title>
+  <meta name="description" content="張瑈君 — 就讀南山中學，對商業經營、電子商務與智慧科技充滿熱情的數位商管跨領域人才。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">YJ</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link" id="nav-home">首頁</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">關於我</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">技能</a></li>
+        <li><a href="#vision" class="nav-link" id="nav-vision">願景</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">聯絡</a></li>
+      </ul>
+      <div class="nav-indicator">
+        <span class="status-dot"></span>
+        <span class="status-text">ONLINE</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">◈</span>
+        <span>南山中學 · 新北中和</span>
+      </div>
+      <div class="hero-title-wrapper">
+        <div class="glitch-wrapper">
+          <h1 class="hero-name glitch" data-text="張瑈君">張瑈君</h1>
+        </div>
+        <div class="hero-subtitle-line">
+          <span class="line-dash">━━━</span>
+          <span class="hero-role">數位商管跨領域人才</span>
+          <span class="line-dash">━━━</span>
+        </div>
+      </div>
+      <p class="hero-tagline">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-tags">
+        <span class="tag" id="tag-biz">💼 商業經營</span>
+        <span class="tag" id="tag-ecom">🛒 電子商務</span>
+        <span class="tag" id="tag-ai">🤖 智慧科技</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary" id="btn-explore">
+          <span>探索我的世界</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-secondary" id="btn-contact">聯絡我</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-core">
+          <div class="avatar-initials">YJ</div>
+          <div class="avatar-scan"></div>
+        </div>
+        <div class="orbit-item orbit-1">💹</div>
+        <div class="orbit-item orbit-2">🌐</div>
+        <div class="orbit-item orbit-3">⚡</div>
+        <div class="orbit-item orbit-4">📊</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">關於我</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card" id="about-identity">
+        <div class="card-header">
+          <span class="card-icon">🧑‍💼</span>
+          <span class="card-title">身份檔案</span>
+          <span class="card-tag">PROFILE</span>
+        </div>
+        <div class="profile-list">
+          <div class="profile-item">
+            <span class="profile-label">姓名</span>
+            <span class="profile-value accent">張瑈君</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">就讀學校</span>
+            <span class="profile-value">南山中學</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">所在地區</span>
+            <span class="profile-value">新北市 · 中和區</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">專業方向</span>
+            <span class="profile-value accent">數位商管</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">學習機構</span>
+            <span class="profile-value">智光商工</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card main-card" id="about-intro">
+        <div class="card-header">
+          <span class="card-icon">⚡</span>
+          <span class="card-title">個人宣言</span>
+          <span class="card-tag">MANIFESTO</span>
+        </div>
+        <p class="intro-text">
+          我是<strong>張瑈君</strong>，現就讀於位在新北中和超讚的<strong>南山中學</strong>。
+        </p>
+        <p class="intro-text">
+          我對<strong>商業經營</strong>、<strong>電子商務</strong>與<strong>智慧科技</strong>充滿熱情與好奇！
+          在智光商工的課程中，我正努力學習文書處理、打字指法、金融專業與網頁開發。
+        </p>
+        <p class="intro-text highlight-text">
+          期待自己能一步步成長為全方位的<strong>數位商管跨領域人才</strong>！
+        </p>
+        <div class="quote-block">
+          <span class="quote-mark">"</span>
+          科技為翼，商業為魂，跨域而行。
+          <span class="quote-mark">"</span>
+        </div>
+      </div>
+      <div class="about-card" id="about-stats">
+        <div class="card-header">
+          <span class="card-icon">📈</span>
+          <span class="card-title">學習數據</span>
+          <span class="card-tag">STATS</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">學習領域</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">學習熱情 %</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">核心興趣</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">明日之星</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">核心技能</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-container">
+      <div class="skill-card" id="skill-doc">
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">📝</div>
+        </div>
+        <h3 class="skill-name">文書處理</h3>
+        <p class="skill-desc">精通辦公室軟體應用，高效整合文字、試算表與簡報工具，打造專業商業文件。</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="82">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-percent">82%</span>
+        </div>
+        <div class="skill-tags-row">
+          <span class="mini-tag">Word</span>
+          <span class="mini-tag">Excel</span>
+          <span class="mini-tag">PowerPoint</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-type">
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">⌨️</div>
+        </div>
+        <h3 class="skill-name">打字指法</h3>
+        <p class="skill-desc">強化鍵盤速度與正確率，以標準指法提升數位工作效率，訓練高速資訊輸入能力。</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="75">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-tags-row">
+          <span class="mini-tag">速打</span>
+          <span class="mini-tag">正確率</span>
+          <span class="mini-tag">盲打</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-finance">
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">💰</div>
+        </div>
+        <h3 class="skill-name">金融專業</h3>
+        <p class="skill-desc">學習金融市場運作、基礎投資理財概念，培養財務分析思維與商業敏銳度。</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="70">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-tags-row">
+          <span class="mini-tag">理財</span>
+          <span class="mini-tag">金融市場</span>
+          <span class="mini-tag">財務分析</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-web">
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">🌐</div>
+        </div>
+        <h3 class="skill-name">網頁開發</h3>
+        <p class="skill-desc">探索 HTML、CSS 與 JavaScript，打造現代化網頁介面，朝全端商業應用發展。</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="68">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-percent">68%</span>
+        </div>
+        <div class="skill-tags-row">
+          <span class="mini-tag">HTML</span>
+          <span class="mini-tag">CSS</span>
+          <span class="mini-tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passion Areas -->
+    <div class="passion-section">
+      <h3 class="passion-title">熱情領域</h3>
+      <div class="passion-grid">
+        <div class="passion-card" id="passion-biz">
+          <div class="passion-glow biz-glow"></div>
+          <div class="passion-icon">💼</div>
+          <h4>商業經營</h4>
+          <p>探索企業管理、行銷策略與商業模式，培養創業家精神與市場洞察力。</p>
+        </div>
+        <div class="passion-card" id="passion-ecom">
+          <div class="passion-glow ecom-glow"></div>
+          <div class="passion-icon">🛒</div>
+          <h4>電子商務</h4>
+          <p>研究數位零售、平台生態與網路行銷，掌握電商時代的商業新脈動。</p>
+        </div>
+        <div class="passion-card" id="passion-tech">
+          <div class="passion-glow tech-glow"></div>
+          <div class="passion-icon">🤖</div>
+          <h4>智慧科技</h4>
+          <p>關注人工智慧、大數據與物聯網，以科技驅動商業創新與數位轉型。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section id="vision">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">未來願景</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="vision-container">
+      <div class="timeline">
+        <div class="timeline-item" id="tl-now">
+          <div class="tl-dot active"></div>
+          <div class="tl-content">
+            <span class="tl-phase">NOW</span>
+            <h3>打穩基礎</h3>
+            <p>在南山中學與智光商工認真學習，掌握文書、金融、網頁等核心能力。</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="tl-next">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-phase">NEXT</span>
+            <h3>跨域整合</h3>
+            <p>結合商業知識與數位技術，打造完整的電商實戰經驗，探索 AI 商業應用。</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="tl-future">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-phase">FUTURE</span>
+            <h3>引領數位商業</h3>
+            <p>成為全方位數位商管跨領域人才，以科技創新驅動商業價值，創造影響力。</p>
+          </div>
+        </div>
+      </div>
+      <div class="vision-card" id="vision-card-main">
+        <div class="vision-card-bg"></div>
+        <div class="vision-card-content">
+          <div class="vision-icon">🚀</div>
+          <h3>我的核心使命</h3>
+          <p>
+            整合<span class="v-accent">商業經營</span>、<span class="v-accent">電子商務</span>與<span class="v-accent">智慧科技</span>三大領域，
+            成為能夠跨界整合、數位驅動的新世代商業人才。
+          </p>
+          <div class="mission-tags">
+            <span class="m-tag">創新思維</span>
+            <span class="m-tag">數位轉型</span>
+            <span class="m-tag">跨域整合</span>
+            <span class="m-tag">商業洞察</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">聯絡我</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info" id="contact-info">
+        <h3 class="contact-subtitle">一起創造未來</h3>
+        <p class="contact-desc">
+          如果你也對商業、科技或電子商務充滿熱情，歡迎與我交流！
+          我期待與志同道合的夥伴攜手，共同探索數位商業的無限可能。
+        </p>
+        <div class="contact-items">
+          <div class="contact-item" id="contact-school">
+            <span class="contact-item-icon">🏫</span>
+            <div>
+              <span class="contact-item-label">就讀學校</span>
+              <span class="contact-item-value">南山中學 · 新北中和</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-program">
+            <span class="contact-item-icon">📚</span>
+            <div>
+              <span class="contact-item-label">學習機構</span>
+              <span class="contact-item-value">智光商工</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-interest">
+            <span class="contact-item-icon">🎯</span>
+            <div>
+              <span class="contact-item-label">興趣方向</span>
+              <span class="contact-item-value">商業 · 電商 · 智慧科技</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-card" id="contact-card">
+        <div class="card-label">DIGITAL BUSINESS CARD</div>
+        <div class="biz-card-inner">
+          <div class="biz-card-avatar">YJ</div>
+          <div class="biz-card-info">
+            <h2 class="biz-name">張瑈君</h2>
+            <p class="biz-title">數位商管跨領域人才</p>
+            <p class="biz-school">南山中學 · 新北中和</p>
+          </div>
+        </div>
+        <div class="biz-card-footer">
+          <span>💼 商業</span>
+          <span>🛒 電商</span>
+          <span>🤖 科技</span>
+        </div>
+        <div class="card-hologram"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">張瑈君</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-text">數位商管跨領域人才 · 南山中學 · 新北中和</p>
+      <p class="footer-sub">© 2026 · Designed with ❤️ & Tech</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
